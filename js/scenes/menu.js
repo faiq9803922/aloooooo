@@ -1,6 +1,5 @@
 // UZELVS Shadow Revenge
 const MenuScene = {
-
     update(Game, ctx) {
         if (Game.keys["Enter"]) {
             changeScene(Level1Scene);
@@ -15,6 +14,6 @@ const MenuScene = {
         ctx.font = "40px Arial";
         ctx.textAlign = "center";
 
-        ctx.fillText("START GAME (Press ENTER)", canvas.width/2, canvas.height/2);
+        ctx.fillText("PRESS ENTER TO START", canvas.width / 2, canvas.height / 2);
     }
 };
