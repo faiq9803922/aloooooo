@@ -9,7 +9,7 @@ const Level1Scene = {
     },
 
     render(Game, ctx) {
-        ctx.fillStyle = "#050505";
+        ctx.fillStyle = "#111";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         Game.player.draw(ctx);
