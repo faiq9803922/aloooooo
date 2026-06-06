@@ -9,6 +9,7 @@ const IntroScene = {
     update(Game, ctx) {
         this.timer++;
 
+        // auto move to menu after 3 seconds
         if (this.timer > 180) {
             changeScene(MenuScene);
         }
@@ -22,9 +23,8 @@ const IntroScene = {
         ctx.font = "60px Arial";
         ctx.textAlign = "center";
 
-        let glow = Math.sin(Date.now() * 0.005) * 10;
         ctx.shadowColor = "purple";
-        ctx.shadowBlur = glow;
+        ctx.shadowBlur = 20;
 
         ctx.fillText("UZELVS", canvas.width / 2, canvas.height / 2);
     }
